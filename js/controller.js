@@ -470,6 +470,8 @@ setTimeout(() => {
 }, 0);
 
 }
+
+
 $(window).resize(function(){
  
  
