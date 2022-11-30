@@ -439,12 +439,13 @@ function blueborder() {
       item.parentElement.parentElement.style.display = "";
     } else {
       item.parentElement.parentElement.style.display = "none";
+      
     }
   });
 }
 function takeInfoObj(email, i) {
-
-  let getfriend = document.querySelectorAll(".friend");
+if (email) {
+    let getfriend = document.querySelectorAll(".friend");
   getfriend.forEach((item) => {
     item.setAttribute("style", "background-color:");
   });
@@ -456,20 +457,19 @@ localStorage.setItem("bothEmailReverse", `${auth.currentUser.email}${email}`)
 model.getChat() 
 
 
-setTimeout(() => {
+
    if (Number(localStorage.getItem("width")) <= 800) {
     document.getElementById("table1").style.display = ""
     document.getElementById("divlistban").style.display = "none"
     
   }
-  if (Number(localStorage.getItem("width")) == 1024) {
+}
 
-    
-  }
-  
-}, 0);
+
+
 
 }
+setInterval(takeInfoObj,500)
 
 
 $(window).resize(function(){
@@ -482,7 +482,7 @@ localStorage.setItem("width",`${width}`)
    
 });
 function okchat() {
-  if (Number(localStorage.getItem("width")) < 1024) {
+  if (Number(localStorage.getItem("width")) < 800) {
 
     
  
@@ -491,6 +491,9 @@ function okchat() {
   document.getElementById("taikhoan").style.display = "none"
  }
 }
+
+
+
 
 
 

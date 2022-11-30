@@ -5,7 +5,7 @@ view.dataUser = (dataUser) => {
 };
 view.setScreenActive = (screenName) => {
   switch (screenName) {
-    case "registerPage":
+    case `registerPage`:
       document.getElementById("app").innerHTML = conponent.registerPage;
 
       let registerForm = document.getElementById("registerForm");

@@ -175,9 +175,10 @@ conponent.wellcomePage = `
               />
             
         
-            <span id="plubss"><i class="fa-solid fa-circle-plus"></i></span>
+            <span id="plubss" style="border-top: 1px solid #fff ;"></span>
             <span><i class="fa-regular fa-image"></i></span>
              <span id="icon111" style="display:block" onclick="tableIcon()" ><i class="fa-solid fa-face-smile"></i></span>
+             <span id="icon1111" style="display:none" onclick="tableIcon1()" ><i class="fa-solid fa-face-smile"></i></span>
             <span
             style="padding-right: 10px;"
                 onclick="btnChat()"
